@@ -9,15 +9,15 @@
 
 	<h1>Bienvenue</h1>
 
-		<p>La liste gossip arrive soon, en attendant nous t'invitons à aller sur cette page ==>>> <a href="/gossips/new/">http://localhost:4567/gossips/new/</a></p>
+	 	<h2> C'est bon la liste Gossip est mise à jour</h2>
 
-		<% gossips.each do |gossip| %>
+    	<% gossips.each_with_index do |gossip,id| %>
         <p>
           <%= gossip.author %><br/>
-          <%= gossip.content %>
+          <a href="/gossips/<%= id.to_s %>/"><%= gossip.content %></a>
         </p>
-      <% end %>
+        <% end %>
 
+        <h3><a href="/gossips/new/">Fais nous part de ton dernier gossip</a></h3>
 </body>
-
 </html>

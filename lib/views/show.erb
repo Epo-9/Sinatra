@@ -3,13 +3,13 @@
 <head>
 	<title></title>
 </head>
-<body>
+ <body>
+
 	<h1>Page POTIN</h1>
-		<p>Voici la page du potin <% ... %></p>
-		<p>Son auteur <% ... %></p>
-		<p>LE contenu du potin <% ... %></p>
+		<p>Voici la page du potin n°<%= params['id'].to_i%> <br/>
+		   Son auteur : ==<%= gossips[0] %> == <br/>
+		   LE contenu du potin : ==<%= gossips[1] %>><br/>
+		   Voici le lien pour revenir à la page des potins <a href="/">Retour à la page d'accueil</a></p>
 
-		<p>Voici le lien pour revenir à la page des potins <a href="GOSSIP">http://localhost:4567/gossips/new/</a></p>
-
-</body>
+ </body>
 </html>
