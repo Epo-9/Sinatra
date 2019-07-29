@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+
+<body>
+
+	<h1>Bienvenue</h1>
+
+		<p>La liste gossip arrive soon, en attendant nous t'invitons à aller sur cette page ==>>> <a href="/gossips/new/">http://localhost:4567/gossips/new/</a></p>
+
+		<% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+
+</body>
+
+</html>
